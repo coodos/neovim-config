@@ -1,0 +1,5 @@
+return {
+	"windwp/nvim-ts-autotag",
+	after = "nvim-treesitter",
+	disable = false
+}
