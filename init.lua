@@ -7,4 +7,5 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 require('merul.core.bindings')
 require('merul.lazy')
-vim.api.nvim_set_keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', {})
+vim.api.nvim_set_keymap('n', '<space>x', '<cmd>lua vim.diagnostic.open_float()<CR>', {})
+vim.api.nvim_set_keymap('n', '<space>j', '<cmd>lua vim.lsp.buf.hover()<CR>', {})

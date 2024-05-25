@@ -1,7 +1,16 @@
 return {
-  "yorickpeterse/nvim-window",
-  keys = {
-    { "<leader>ww", "<cmd>lua require('nvim-window').pick()<cr>", desc = "nvim-window: Jump to window" },
-  },
-  config = true,
+	'alexghergh/nvim-tmux-navigation',
+	config = function()
+		require 'nvim-tmux-navigation'.setup {
+			disable_when_zoomed = true, -- defaults to false
+			keybindings = {
+				left = "<C-h>",
+				down = "<C-j>",
+				up = "<C-k>",
+				right = "<C-l>",
+				last_active = "<C-\\>",
+				next = "<C-Space>",
+			}
+		}
+	end
 }
